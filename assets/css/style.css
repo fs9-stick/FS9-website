@@ -103,6 +103,9 @@ ul {
 
 /* Mobile Navigation */
 @media (max-width: 768px) {
+    .header, .nav {
+        display: none; /* Temporary for diagnosis */
+    }
     .nav {
         position: fixed;
         top: 80px; /* ヘッダーの高さ分ずらす */
