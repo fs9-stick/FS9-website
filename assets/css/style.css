@@ -154,6 +154,10 @@ ul {
         /* Added to ensure image doesn't overflow */
     }
 
+    .hero-logo-img {
+        margin-top: 20px; /* Move logo down for mobile */
+    }
+
 
 
         .hero-content .hero-main-catchcopy {
