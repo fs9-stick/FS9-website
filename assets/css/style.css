@@ -237,22 +237,6 @@ ul {
         top: 0;
         transform: rotate(-45deg);
     }
-
-    .header {
-        padding: 0; /* Added to minimize header height */
-    }
-
-    .logo img {
-        height: 80px; /* Set logo height back to 80px */
-    }
-
-    .menu-toggle {
-        flex-shrink: 0; /* Added to prevent shrinking */
-    }
-
-    .logo img {
-        max-width: 100%; /* Added to ensure image doesn't overflow */
-    }
 }
 
 /* Main Content */
