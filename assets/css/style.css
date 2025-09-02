@@ -103,6 +103,9 @@ ul {
 
 /* Mobile Navigation */
 @media (max-width: 768px) {
+    body {
+        overflow-x: hidden; /* Add this line to prevent horizontal scrolling */
+    }
     .nav {
         position: fixed;
         top: 80px; /* ヘッダーの高さ分ずらす */
