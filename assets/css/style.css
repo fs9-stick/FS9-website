@@ -275,12 +275,12 @@ main {
     width: 50%; /* Adjust as needed */
     max-width: 400px;
     height: auto;
-    margin-top: 20px;
+    margin-top: 0px;
     margin-bottom: 10px;
 }
 
 .hero-main-catchcopy {
-    font-size: 24px;
+    font-size: 36px;
     /* メインキャッチコピーのサイズ */
     margin-top: 10px;
     margin-bottom: 10px;
@@ -289,7 +289,7 @@ main {
 }
 
 .hero-sub-catchcopy {
-    font-size: 20px;
+    font-size: 30px;
     /* サブキャッチコピーのサイズ */
     margin-top: 10px;
     font-weight: normal;
