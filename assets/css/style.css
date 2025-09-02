@@ -275,13 +275,13 @@ main {
     width: 50%; /* Adjust as needed */
     max-width: 400px;
     height: auto;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .hero-main-catchcopy {
     font-size: 24px;
     /* メインキャッチコピーのサイズ */
-    margin-top: 20px;
+    margin-top: 10px;
     margin-bottom: 10px;
     font-weight: bold;
     line-height: 1.4;
