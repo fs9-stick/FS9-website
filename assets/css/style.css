@@ -43,7 +43,7 @@ ul {
 }
 
 .logo img {
-    height: 36px;
+    height: 50px;
     width: auto;
 }
 
@@ -139,13 +139,10 @@ ul {
     }
 
     .logo img {
-        height: 28px;
+        height: 40px;
     }
 
-    /* Hero Section Mobile */
-    .hero-logo {
-        font-size: 28px;
-    }
+    
 
     .hero-main-catchcopy {
         font-size: 10px;
@@ -274,14 +271,11 @@ main {
     z-index: 1;
 }
 
-.hero-logo {
-    font-family: 'Oswald', sans-serif;
-    font-weight: 700;
-    text-transform: uppercase;
-    font-size: 100px;
-    letter-spacing: 5px;
-    margin: 0;
-    line-height: 1;
+.hero-logo-img {
+    width: 50%; /* Adjust as needed */
+    max-width: 400px;
+    height: auto;
+    margin-bottom: 20px;
 }
 
 .hero-main-catchcopy {
