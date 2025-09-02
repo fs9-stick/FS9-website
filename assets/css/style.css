@@ -136,22 +136,20 @@ ul {
 
     .menu-toggle {
         display: flex; /* モバイルで表示 */
-        flex-shrink: 0; /* Added to prevent shrinking */
     }
 
     .logo img {
-        height: 80px; /* Set logo height to 80px */
-        max-width: 100%; /* Added to ensure image doesn't overflow */
+        height: 60px;
     }
 
     
 
     .hero-main-catchcopy {
-        font-size: 20px;
+        font-size: 10px;
     }
 
     .hero-sub-catchcopy {
-        font-size: 16px;
+        font-size: 12px;
     }
 
     /* Sections Mobile Padding */
@@ -238,14 +236,6 @@ ul {
     .menu-toggle.active .hamburger::after {
         top: 0;
         transform: rotate(-45deg);
-    }
-
-    .header {
-        padding: 0; /* Minimize header height */
-    }
-
-    .hero-content {
-        text-align: center; /* Center hero content */
     }
 }
 
