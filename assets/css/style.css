@@ -136,10 +136,12 @@ ul {
 
     .menu-toggle {
         display: flex; /* モバイルで表示 */
+        flex-shrink: 0; /* Added to prevent shrinking */
     }
 
     .logo img {
         height: 60px;
+        max-width: 100%; /* Added to ensure image doesn't overflow */
     }
 
     
