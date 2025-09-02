@@ -276,6 +276,7 @@ main {
 .hero-content {
     position: relative;
     z-index: 1;
+    transform: translateY(-115px);
 }
 
 .hero-logo-img {
@@ -283,19 +284,20 @@ main {
     max-width: 700px !important;
     height: auto;
     margin: 0 auto 20px;
+    margin-top: 10px;
 }
 
 .hero-main-catchcopy {
-    font-size: 24px;
+    font-size: 26px;
     /* メインキャッチコピーのサイズ */
-    margin-top: 10px;
+    margin-top: -140px;
     margin-bottom: 10px;
     font-weight: bold;
     line-height: 1.4;
 }
 
 .hero-sub-catchcopy {
-    font-size: 20px;
+    font-size: 24px;
     /* サブキャッチコピーのサイズ */
     margin-top: 0;
     font-weight: normal;
