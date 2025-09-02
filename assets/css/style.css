@@ -291,7 +291,7 @@ main {
 .hero-sub-catchcopy {
     font-size: 20px;
     /* サブキャッチコピーのサイズ */
-    margin-top: 0;
+    margin-top: 10px;
     font-weight: normal;
     opacity: 0.8;
 }
