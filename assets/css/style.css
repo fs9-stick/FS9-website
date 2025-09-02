@@ -42,12 +42,9 @@ ul {
     align-items: center;
 }
 
-.logo {
-    font-family: 'Oswald', sans-serif;
-    font-weight: 700;
-    text-transform: uppercase;
-    font-size: 36px;
-    letter-spacing: 1px;
+.logo img {
+    height: 36px;
+    width: auto;
 }
 
 .nav ul {
@@ -141,8 +138,8 @@ ul {
         display: flex; /* モバイルで表示 */
     }
 
-    .logo {
-        font-size: 28px;
+    .logo img {
+        height: 28px;
     }
 
     /* Hero Section Mobile */
