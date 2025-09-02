@@ -139,17 +139,17 @@ ul {
     }
 
     .logo img {
-        height: 60px;
+        height: 80px;
     }
 
     
 
     .hero-main-catchcopy {
-        font-size: 10px;
+        font-size: 8px !important;
     }
 
     .hero-sub-catchcopy {
-        font-size: 12px;
+        font-size: 10px !important;
     }
 
     /* Sections Mobile Padding */
