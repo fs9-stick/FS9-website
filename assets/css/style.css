@@ -273,8 +273,7 @@ main {
 }
 
 .hero-logo-img {
-    width: 50%; /* Adjust as needed */
-    max-width: 400px;
+    width: 90%;
     height: auto;
     margin-top: 0px;
     margin-bottom: 10px;
