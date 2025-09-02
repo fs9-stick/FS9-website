@@ -271,7 +271,6 @@ main {
     z-index: 1;
     transform: translateY(-100px);
     width: 100%;
-    max-width: 800px;
 }
 
 .hero-logo-img {
