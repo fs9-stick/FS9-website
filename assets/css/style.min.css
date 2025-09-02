@@ -279,12 +279,10 @@ main {
 }
 
 .hero-logo-img {
-    width: 50%;
-    /* Adjust as needed */
-    max-width: 400px;
+    width: 80% !important;
+    max-width: 700px !important;
     height: auto;
-    margin-top: 20px;
-    margin-bottom: 10px;
+    margin: 0 auto 20px;
 }
 
 .hero-main-catchcopy {
