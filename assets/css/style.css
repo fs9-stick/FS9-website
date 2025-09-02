@@ -275,6 +275,7 @@ main {
     width: 50%; /* Adjust as needed */
     max-width: 400px;
     height: auto;
+    margin-top: 20px;
     margin-bottom: 10px;
 }
 
