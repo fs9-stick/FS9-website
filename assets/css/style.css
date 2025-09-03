@@ -125,6 +125,7 @@ ul {
     .nav.active {
         left: 0;
         /* 表示 */
+        background-color: rgba(255, 0, 0, 0.5) !important; /* DEBUG: Red background when active */
     }
 
     .nav ul {
@@ -246,6 +247,10 @@ ul {
     /* Hamburger Animation */
     .menu-toggle.active .hamburger {
         background-color: transparent;
+    }
+
+    .menu-toggle.active {
+        background-color: rgba(0, 255, 0, 0.5) !important; /* DEBUG: Green background when active */
     }
 
     .menu-toggle.active .hamburger::before {
