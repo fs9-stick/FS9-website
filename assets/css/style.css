@@ -285,6 +285,7 @@ ul {
         /* 上寄せ */
         padding-top: 150px;
         /* 上からの余白を微調整 */
+        background-position: center -50px !important;
     }
 
     .hero-content {
@@ -320,7 +321,8 @@ main {
 
 /* ヒーローセクション */
 .hero {
-    background: url('../image/hero_background.jpg') no-repeat center center/cover;
+    background: url('../image/hero_background.jpg') no-repeat center center;
+    background-size: cover;
     height: 100vh;
     display: flex;
     justify-content: center;
