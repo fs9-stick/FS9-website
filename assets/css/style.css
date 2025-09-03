@@ -1,6 +1,6 @@
-/* Basic Styles */
+/* 基本スタイル */
 body {
-    /* Keep the original font for body text */
+    /* 本文のフォントは元のままにする */
     font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;
     margin: 0;
     background-color: #000;
@@ -64,7 +64,7 @@ ul {
     color: #aaa;
 }
 
-/* Hamburger Menu */
+/* ハンバーガーメニュー */
 .menu-toggle {
     display: none;
     /* デフォルトでは非表示 */
@@ -102,7 +102,7 @@ ul {
     top: 8px;
 }
 
-/* Mobile Navigation */
+/* モバイルナビゲーション */
 @media (max-width: 768px) {
     .nav {
         position: fixed;
@@ -125,7 +125,8 @@ ul {
     .nav.active {
         left: 0;
         /* 表示 */
-        background-color: rgba(255, 0, 0, 0.5) !important; /* DEBUG: Red background when active */
+        background-color: rgba(0, 0, 0, 0.95);
+        /* 半透明の黒 */
     }
 
     .nav ul {
@@ -145,35 +146,41 @@ ul {
         display: flex;
         /* モバイルで表示 */
         flex-shrink: 0;
-        /* Added to prevent shrinking */
+        /* 縮小を防ぐために追加 */
     }
 
     .logo img {
         height: 80px;
-        /* Set logo height to 80px */
+        /* ロゴの高さを80pxに設定 */
         max-width: 100%;
-        /* Added to ensure image doesn't overflow */
+        /* 画像がはみ出さないように追加 */
     }
 
     .hero-logo-img {
-        margin-top: 20px; /* Move logo down for mobile */
+        margin-top: -30px;
+        /* モバイル用にロゴを下に移動 */
     }
 
 
 
-        .hero-content .hero-main-catchcopy {
-        font-size: 18px;
+    .hero-content .hero-main-catchcopy {
+        font-size: 28px !important;
+        margin-top: -20px;
+        /* ロゴの下にスペースを追加し、キャッチフレーズを下に移動 */
     }
 
     .hero-content .hero-sub-catchcopy {
-        font-size: 14px;
+        font-size: 18px !important;
+        margin-top: 20px !important;
     }
 
     .hero-content {
-        top: -100px; /* Adjust vertical position for mobile */
+        position: relative;
+        top: -200px;
+        /* モバイル用に垂直位置をリセット */
     }
 
-    /* Sections Mobile Padding */
+    /* セクションのモバイルパディング */
     .concept,
     .products,
     .comparison,
@@ -215,7 +222,7 @@ ul {
         font-size: 14px;
     }
 
-    /* Grid Layouts Mobile */
+    /* グリッドレイアウト（モバイル） */
     .product-grid,
     .ambassador-grid {
         grid-template-columns: 1fr;
@@ -226,7 +233,7 @@ ul {
         padding: 20px;
     }
 
-    /* Footer Mobile */
+    /* フッター（モバイル） */
     .footer {
         padding: 30px 0;
     }
@@ -244,14 +251,12 @@ ul {
         font-size: 12px;
     }
 
-    /* Hamburger Animation */
+    /* ハンバーガーアニメーション */
     .menu-toggle.active .hamburger {
         background-color: transparent;
     }
 
-    .menu-toggle.active {
-        background-color: rgba(0, 255, 0, 0.5) !important; /* DEBUG: Green background when active */
-    }
+    .menu-toggle.active {}
 
     .menu-toggle.active .hamburger::before {
         top: 0;
@@ -265,7 +270,8 @@ ul {
 
     .header {
         padding: 0;
-        height: 80px; /* Explicitly set header height to match logo */
+        height: 80px;
+        /* ヘッダーの高さをロゴに合わせて明示的に設定 */
     }
 
     .header .container {
@@ -275,43 +281,51 @@ ul {
     }
 
     .hero {
-        align-items: center; /* Center content vertically for mobile */
+        align-items: flex-start;
+        /* 上寄せ */
+        padding-top: 150px;
+        /* 上からの余白を微調整 */
     }
 
     .hero-content {
-        top: 0; /* Reset vertical position for mobile */
+        margin-top: 50px;
+        /* PC用のマイナスマージンをリセット */
     }
 
-    .hero-content .hero-main-catchcopy {
-        /* Remove margin-top for mobile */
-        margin-bottom: 10px; /* Default spacing */
-    }
-
-    .hero-content .hero-sub-catchcopy {
-        /* Remove margin-top for mobile */
-    }
-
-    
-
-    .hero-content {
-        text-align: center;
-        /* Center hero content */
-    }
 }
 
-/* Main Content */
+.hero-content .hero-main-catchcopy {
+    margin-bottom: 0px;
+    /* デフォルトの間隔 */
+}
+
+.hero-content .hero-sub-catchcopy {
+    margin-top: 0;
+    /* モバイル用のmargin-topを削除 */
+}
+
+
+
+.hero-content {
+    text-align: center;
+    /* ヒーローコンテンツを中央に配置 */
+}
+
+
+/* メインコンテンツ */
 main {
     padding-top: 80px;
-    /* Adjust for fixed header */
+    /* 固定ヘッダーに合わせて調整 */
 }
 
-/* Hero Section */
+/* ヒーローセクション */
 .hero {
     background: url('../image/hero_background.jpg') no-repeat center center/cover;
     height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center; /* Revert to center */
+    align-items: center;
+    /* 中央に戻す */
     text-align: center;
     position: relative;
 }
@@ -329,7 +343,8 @@ main {
 .hero-content {
     position: relative;
     z-index: 1;
-    margin-top: -200px; /* Move the entire content block even further up */
+    margin-top: -220px;
+    /* コンテンツブロック全体をさらに上に移動 */
     width: 100%;
 }
 
@@ -343,8 +358,10 @@ main {
 .hero-main-catchcopy {
     font-size: 48px;
     /* メインキャッチコピーのサイズ */
-    margin-top: -150px; /* Move up as a set */
-    margin-bottom: 0; /* Reduce space between main and sub */
+    margin-top: -150px;
+    /* セットとして上に移動 */
+    margin-bottom: 0;
+    /* メインとサブの間のスペースを減らす */
     font-weight: bold;
     line-height: 1.4;
 }
@@ -357,7 +374,7 @@ main {
     opacity: 0.8;
 }
 
-/* Sections */
+/* セクション */
 .concept,
 .products,
 .comparison,
@@ -376,7 +393,7 @@ main {
 .comparison h2,
 .mission h2 {
     font-family: 'Oswald', sans-serif;
-    /* Keep Oswald for other headings */
+    /* その他の見出しにはOswaldを維持 */
     font-size: 36px;
     margin-bottom: 40px;
 }
@@ -404,7 +421,7 @@ main {
     text-align: left;
 }
 
-/* Products Section */
+/* プロダクトセクション */
 .product-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -448,7 +465,7 @@ main {
     color: #000;
 }
 
-/* Ambassadors Section */
+/* アンバサダーセクション */
 .ambassador-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -489,13 +506,15 @@ main {
     /* コメントを非表示 */
 }
 
-/* Footer */
+/* フッター */
 .footer {
-    background-color: #000; /* Match body background */
+    background-color: #000;
+    /* bodyの背景色と合わせる */
     text-align: center;
     padding: 40px 0;
     margin-top: 60px;
-    border-top: 1px solid #333; /* Revert: Add the line back */
+    border-top: 1px solid #333;
+    /* 元に戻す: 行を追加 */
 }
 
 .footer-container {
@@ -548,7 +567,7 @@ main {
     font-size: 14px;
 }
 
-/* Comparison Section */
+/* 比較セクション */
 .comparison p {
     font-size: 18px;
     margin-bottom: 40px;
@@ -560,10 +579,11 @@ main {
     border: 1px solid #333;
 }
 
-/* Mission Section */
+/* ミッションセクション */
 .mission {
     padding: 80px 0;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, #000 20%, #000 100%); /* Match body background */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, #000 20%, #000 100%);
+    /* bodyの背景色と合わせる */
 }
 
 .mission .container {
@@ -619,7 +639,7 @@ main {
     transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 
-/* Responsive for mission section */
+/* ミッションセクションのレスポンシブ対応 */
 @media (max-width: 768px) {
     .mission-content {
         flex-direction: column;
@@ -662,7 +682,7 @@ main {
     }
 }
 
-/* Back to Top Button */
+/* トップに戻るボタン */
 .back-to-top {
     position: fixed;
     bottom: 20px;

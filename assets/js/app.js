@@ -1,8 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
-
-    // Fade-in animation
-    const fadeInTargets = document.querySelectorAll('.fade-in');
-    if (fadeInTargets.length > 0) {
+    const fadeInElements = document.querySelectorAll('.fade-in');
+    if (fadeInElements.length > 0) {
         const observer = new IntersectionObserver((entries, observer) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
@@ -15,12 +13,11 @@ document.addEventListener('DOMContentLoaded', () => {
             threshold: 0.1
         });
 
-        fadeInTargets.forEach(target => {
-            observer.observe(target);
+        fadeInElements.forEach(element => {
+            observer.observe(element);
         });
     }
 
-    // Hamburger menu functionality
     const menuToggle = document.querySelector('.menu-toggle');
     const nav = document.querySelector('.nav');
 
@@ -28,13 +25,10 @@ document.addEventListener('DOMContentLoaded', () => {
         menuToggle.addEventListener('click', () => {
             menuToggle.classList.toggle('active');
             nav.classList.toggle('active');
-
-            // Toggle ARIA attribute
-            const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
-            menuToggle.setAttribute('aria-expanded', !isExpanded);
+            const expanded = menuToggle.getAttribute('aria-expanded') === 'true';
+            menuToggle.setAttribute('aria-expanded', !expanded);
         });
 
-        // Close menu when a nav link is clicked (for mobile)
         nav.querySelectorAll('a').forEach(link => {
             link.addEventListener('click', () => {
                 if (nav.classList.contains('active')) {
@@ -46,9 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Back to top button functionality
     const backToTopButton = document.querySelector('.back-to-top');
-
     if (backToTopButton) {
         window.addEventListener('scroll', () => {
             if (window.scrollY > 400) {
