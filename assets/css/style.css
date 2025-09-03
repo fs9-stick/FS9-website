@@ -274,16 +274,16 @@ ul {
     }
 
     .hero-content {
-        margin-top: 0; /* Reset margin for mobile */
+        top: 0; /* Reset vertical position for mobile */
     }
 
     .hero-content .hero-main-catchcopy {
-        margin-top: 0; /* Reset margin for mobile */
+        /* Remove margin-top for mobile */
         margin-bottom: 10px; /* Default spacing */
     }
 
     .hero-content .hero-sub-catchcopy {
-        margin-top: 10px; /* Default spacing */
+        /* Remove margin-top for mobile */
     }
 
     
