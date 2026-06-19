@@ -1,7 +1,7 @@
 /* 基本スタイル */
 body {
-    /* 本文のフォントは元のままにする */
-    font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;
+    /* ECショップ（BASE）と統一：英字=Outfit／日本語=Zen Kaku Gothic New（フォールバック順で使い分け） */
+    font-family: 'Outfit', 'Zen Kaku Gothic New', 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;
     margin: 0;
     background-color: #000;
     color: #fff;
@@ -362,10 +362,13 @@ main {
 }
 
 .hero-sub-catchcopy {
+    font-family: 'Outfit', sans-serif;
+    /* ECショップと統一：英字タグラインは Outfit */
     font-size: 40px;
     /* サブキャッチコピーのサイズ */
     margin-top: 10px;
-    font-weight: normal;
+    font-weight: 500;
+    letter-spacing: 0.06em;
     opacity: 0.8;
 }
 
@@ -385,11 +388,40 @@ main {
 .concept h2,
 .products h2,
 .comparison h2,
-.mission h2 {
-    font-family: 'Oswald', sans-serif;
-    /* その他の見出しにはOswaldを維持 */
+.mission h2,
+.activity-report h2 {
+    font-family: 'Outfit', sans-serif;
+    /* ECショップと統一：英字見出しは Outfit */
+    font-weight: 700;
     font-size: 36px;
+    letter-spacing: 0.04em;
     margin-bottom: 40px;
+}
+
+/* セクション見出しの下にモノクロのアクセント下線 */
+.concept h2,
+.products h2,
+.comparison h2,
+.mission h2,
+.activity-report h2 {
+    display: inline-block;
+    padding-bottom: 14px;
+    position: relative;
+}
+
+.concept h2::after,
+.products h2::after,
+.comparison h2::after,
+.mission h2::after,
+.activity-report h2::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 48px;
+    height: 2px;
+    background-color: #fff;
 }
 
 .concept h3 {
