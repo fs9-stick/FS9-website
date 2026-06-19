@@ -184,8 +184,7 @@ ul {
     .concept,
     .products,
     .comparison,
-    .activity-report,
-    .ambassadors {
+    .activity-report {
         padding: 60px 0;
     }
 
@@ -193,27 +192,23 @@ ul {
     .products h2,
     .comparison h2,
     .mission h2,
-    .activity-report h2,
-    .ambassadors h2 {
+    .activity-report h2 {
         font-size: 30px;
         margin-bottom: 30px;
     }
 
     .concept h3,
-    .activity-report h3,
-    .ambassadors h3 {
+    .activity-report h3 {
         font-size: 20px;
         margin-bottom: 20px;
     }
 
     .concept p,
-    .activity-report p,
-    .ambassador-item p {
+    .activity-report p {
         font-size: 15px;
     }
 
-    .product-item h3,
-    .ambassador-item h3 {
+    .product-item h3 {
         font-size: 20px;
     }
 
@@ -223,13 +218,11 @@ ul {
     }
 
     /* グリッドレイアウト（モバイル） */
-    .product-grid,
-    .ambassador-grid {
+    .product-grid {
         grid-template-columns: 1fr;
     }
 
-    .product-item,
-    .ambassador-item {
+    .product-item {
         padding: 20px;
     }
 
@@ -380,8 +373,7 @@ main {
 .concept,
 .products,
 .comparison,
-.activity-report,
-.ambassadors {
+.activity-report {
     padding: 80px 0;
     text-align: center;
 }
@@ -465,47 +457,6 @@ main {
 .btn:hover {
     background-color: #fff;
     color: #000;
-}
-
-/* アンバサダーセクション */
-.ambassador-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 40px;
-    margin-top: 40px;
-}
-
-.ambassador-item {
-    background-color: #111;
-    padding: 30px;
-    border: 1px solid #333;
-    transition: transform 0.3s;
-}
-
-.ambassador-item:hover {
-    transform: translateY(-10px);
-}
-
-.ambassador-item img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 20px;
-    border-radius: 5px;
-}
-
-.ambassador-item h3 {
-    font-size: 22px;
-    margin-bottom: 10px;
-}
-
-.ambassador-item p {
-    font-size: 16px;
-    line-height: 1.6;
-}
-
-.ambassador-item p:nth-of-type(2) {
-    display: none;
-    /* コメントを非表示 */
 }
 
 /* フッター */
@@ -636,9 +587,14 @@ main {
 
 /* Animation */
 .fade-in {
-    /* opacity: 0; */
+    opacity: 0;
     transform: translateY(30px);
     transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in.is-visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 /* ミッションセクションのレスポンシブ対応 */
