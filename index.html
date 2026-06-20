@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="FS9は、最軽量×強靭×低価格を実現したアイスホッケースティックブランド。デザインの一切を省き、機能美だけを追求しています。">
     <title>FS9 | 最軽量×強靭×低価格のアイスホッケースティック</title>
+    <link rel="canonical" href="https://fs9-stick.github.io/FS9-website/">
+    <meta name="robots" content="index, follow">
 
     <!-- favicon -->
     <link rel="icon" type="image/png" sizes="32x32" href="assets/image/favicon-32x32.png">
@@ -19,6 +21,49 @@
     <meta property="og:url" content="https://fs9-stick.github.io/FS9-website/">
     <meta property="og:image" content="https://fs9-stick.github.io/FS9-website/assets/image/hero_background.jpg">
     <meta name="twitter:card" content="summary_large_image">
+
+    <!-- 構造化データ（JSON-LD） -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "Organization",
+                "name": "FS9",
+                "url": "https://fs9-stick.github.io/FS9-website/",
+                "logo": "https://fs9-stick.github.io/FS9-website/assets/image/fs9-logo.png",
+                "sameAs": ["https://www.instagram.com/fs9_2025/"]
+            },
+            {
+                "@type": "Product",
+                "name": "SR Model 325",
+                "image": "https://fs9-stick.github.io/FS9-website/assets/image/product_sr_model_325.JPG",
+                "description": "驚異的な軽さと、しなやかなシュートフィールを実現したフラッグシップモデル。",
+                "brand": { "@type": "Brand", "name": "FS9" },
+                "offers": {
+                    "@type": "Offer",
+                    "price": "28980",
+                    "priceCurrency": "JPY",
+                    "availability": "https://schema.org/InStock",
+                    "url": "https://fs9.base.shop/items/101793487"
+                }
+            },
+            {
+                "@type": "Product",
+                "name": "GK SR Model 25",
+                "image": "https://fs9-stick.github.io/FS9-website/assets/image/product_gk_sr_model_25.JPG",
+                "description": "ゴールキーパーの素早い動きをサポートする、専用設計の軽量GKスティック。",
+                "brand": { "@type": "Brand", "name": "FS9" },
+                "offers": {
+                    "@type": "Offer",
+                    "priceCurrency": "JPY",
+                    "availability": "https://schema.org/InStock",
+                    "url": "https://fs9.base.shop/items/102348148"
+                }
+            }
+        ]
+    }
+    </script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -160,7 +205,7 @@
 
     <a href="#" class="back-to-top" aria-label="トップに戻る">↑</a>
 
-    <script src="assets/js/app.min.js"></script>
+    <script src="assets/js/app.js?v=20260620"></script>
 </body>
 
 </html>
