@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://fs9-stick.github.io/FS9-website/sitemap.xml

@@ -74,6 +74,17 @@ ul {
     height: 20px;
     cursor: pointer;
     z-index: 9999;
+    /* button要素の既定スタイルをリセット */
+    padding: 0;
+    background: none;
+    border: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.menu-toggle:focus-visible {
+    outline: 2px solid #fff;
+    outline-offset: 4px;
 }
 
 .hamburger {
